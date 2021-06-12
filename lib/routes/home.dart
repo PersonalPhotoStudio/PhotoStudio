@@ -28,6 +28,10 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image.asset(
+              "assets/images/girl.jpg",
+              width: 100.0,
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
