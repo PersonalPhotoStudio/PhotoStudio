@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photo_studio/routes/Home/HomeRoute.dart';
 
 /// Home Drawer
 class HomeDraw extends StatelessWidget {
@@ -18,7 +19,7 @@ class HomeDraw extends StatelessWidget {
         children: [
           Center(
             child: ElevatedButton(
-              onPressed: onClose,
+              onPressed: HomeShareDrawer.of(context).onClose,
               child: const Text('close Drawer'),
             ),
           )

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photo_studio/routes/Home/HomeRoute.dart';
 
 /// Home 主体
 class HomeBody extends StatelessWidget {
@@ -7,6 +8,13 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Center(
+        child: ElevatedButton(
+          onPressed: HomeShareDrawer.of(context).onOpen,
+          child: const Text('open Drawer'),
+        ),
+      ),
+    );
   }
 }
