@@ -31,7 +31,7 @@ class _HomeRouteState extends State<HomeRoute> {
         key: _scaffoldKey,
         appBar: AppBar(title: const Text('Drawer Demo')),
         body: HomeBody(),
-        drawer: HomeDraw(onClose: _closeDrawer),
+        drawer: HomeDraw(),
         drawerEnableOpenDragGesture: false,
       ),
     );
