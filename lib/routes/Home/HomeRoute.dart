@@ -33,6 +33,16 @@ class _HomeRouteState extends State<HomeRoute> {
         body: HomeBody(),
         drawer: HomeDraw(),
         drawerEnableOpenDragGesture: false,
+        bottomNavigationBar: BottomAppBar(
+          shape: const CircularNotchedRectangle(),
+          child: Container(height: 50.0),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: _openDrawer,
+          tooltip: 'Open',
+          child: const Icon(Icons.menu),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
